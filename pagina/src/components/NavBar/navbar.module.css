@@ -1,0 +1,31 @@
+.header{
+    background-color: rgb(42, 42, 42);
+    width: 100vw;
+}
+
+.nav{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.div_button{
+    margin-left: 5rem;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.div_cart{
+    margin-right: 5rem;
+}
+
+.buttonCarrito{
+    background-color: rgb(42, 42, 42);
+    border: none;
+}
+

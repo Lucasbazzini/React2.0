@@ -1,13 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import { Routes, Route, Navigate } from 'react-router-dom'
+import Home from './components/Home'
+import { useEffect, useState } from 'react'
+import Navbar from './components/NavBar'
+import ProductList from './components/ProductList'
 
 function App() {
-  const [count, setCount] = useState(0)
 
+  const [productos, setProductos] = useState([])
+
+
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/products")
+      .then((response) => response.json())
+      .then((data) => {
+        setProductos(data)
+      })
+  }, [])
+  console.log(productos);
   return (
     <div className="App">
-      <h1>Hola</h1>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home />} />
+        <Route path='/productos' element={<ProductList productos={productos}/>}/>
+      </Routes>
+      
     </div>
   )
 }

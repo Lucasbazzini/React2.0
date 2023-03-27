@@ -1,0 +1,27 @@
+.btn {
+    padding: 1rem 2rem;
+    font-weight: 700;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    transition-property: border-top,
+        border-left,
+        border-bottom,
+        border-right,
+        box-shadow;
+}
+
+.btn:hover {
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px;
+}
+
+.ancla {
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    transition: all 0.3s;
+}

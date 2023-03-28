@@ -25,10 +25,9 @@ export const Navbar = () => {
                     <Link to="/productos/jewelery">
                         <Button text='Jewelery' />
                     </Link>
-                    <Link to="/productos/technology">
+                    <Link to="/productos/electronics">
                         <Button text='Tecnologia' />
                     </Link>
-
                 </div>
                 <div className={styles.div_cart}>
                     < button className={styles.buttonCarrito} >

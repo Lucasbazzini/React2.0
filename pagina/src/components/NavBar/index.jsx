@@ -16,10 +16,10 @@ export const Navbar = () => {
                     <Link to="/productos">
                         <Button text='Productos' />
                     </Link>
-                    <Button text='Procesadores' />
-                    <Button text='Memoria Ram' />
-                    <Button text='SSD' />
-                    <Button text='GPU' />
+                    <Button text='Hombre' />
+                    <Button text='Mujer' />
+                    <Button text='Jewelery' />
+                    <Button text='Tecnologia' />
                 </div>
                 <div className={styles.div_cart}>
                     < button className={styles.buttonCarrito} >

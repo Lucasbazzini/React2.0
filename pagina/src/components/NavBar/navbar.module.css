@@ -7,7 +7,7 @@
     padding: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
@@ -16,7 +16,7 @@
     margin-left: 5rem;
     width: 60vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 

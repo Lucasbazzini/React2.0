@@ -4,6 +4,7 @@ import Home from './components/Home'
 import { useEffect, useState } from 'react'
 import Navbar from './components/NavBar'
 import ProductList from './components/ProductList'
+import CardDetail from './components/CardDetail'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path='/productos' element={<ProductList productos={productos}/>}/>
+        <Route path='productos/:id' element={<CardDetail/>}/>
       </Routes>
       
     </div>

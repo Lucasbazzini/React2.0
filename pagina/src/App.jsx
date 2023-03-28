@@ -27,6 +27,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path='/productos' element={<ProductList productos={productos}/>}/>
         <Route path='productos/:id' element={<CardDetail/>}/>
+        
       </Routes>
       
     </div>

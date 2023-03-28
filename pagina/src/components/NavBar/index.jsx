@@ -10,16 +10,25 @@ export const Navbar = () => {
         <header className={styles.header}>
             <nav className={styles.nav}>
                 <div className={styles.div_button}>
-                    <Link  to="/home" >
+                    <Link to="/home" >
                         <Button text='Home' />
                     </Link >
                     <Link to="/productos">
                         <Button text='Productos' />
                     </Link>
-                    <Button text='Hombre' />
-                    <Button text='Mujer' />
-                    <Button text='Jewelery' />
-                    <Button text='Tecnologia' />
+                    <Link to="/productos/men">
+                        <Button text='Hombre' />
+                    </Link>
+                    <Link to="/productos/women">
+                        <Button text='Mujer' />
+                    </Link>
+                    <Link to="/productos/jewelery">
+                        <Button text='Jewelery' />
+                    </Link>
+                    <Link to="/productos/technology">
+                        <Button text='Tecnologia' />
+                    </Link>
+
                 </div>
                 <div className={styles.div_cart}>
                     < button className={styles.buttonCarrito} >
